@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afinador Cromático</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <form>
+            <h3 class="tituloA">Elige la Afinación</h3>
+            <select class="selector" id="frecuenciaBase">
+                    <option value="estandar" selected>Estándar (EADGBE)</option>
+                    <option value="dropd">Drop D (DADGBE)</option>
+                    <option value="openg">Open G (DGDGBD)</option>
+                    <option value="opend">Open D (DADF#AD)</option>
+                    <option value="opene">Open E (EBEG#BE)</option>
+                    <option value="cuartas">Afinación por Cuartas</option>
+                    <option value="tonoabajo">Mi Estándar -1 tono (DGCFAD)</option>
+                    <option value="baritona">Barítona (BEADF#B)</option>
+            </select>
+
+                        <label for="frecuenciaReferencia">Frecuencia de referencia (Hz):</label>
+            <select id="frecuenciaReferencia">
+                <option value="435">435 Hz</option>
+                <option value="436">436 Hz</option>
+                <option value="437">437 Hz</option>
+                <option value="438">438 Hz</option>
+                <option value="439">439 Hz</option>
+                <option value="440" selected>440 Hz (estándar)</option>
+                <option value="441">441 Hz</option>
+                <option value="442">442 Hz</option>
+                <option value="443">443 Hz</option>
+                <option value="444">444 Hz</option>
+                <option value="445">445 Hz</option>
+            </select>
+
+
+        </form>
+        <div class="rectangulo">
+            <div class="linea"></div>
+            <div>
+                <img src="./img/bajar.png" alt="Bajar" class="bajar">
+                <img src="./img/subir.png" alt="Subir" class="subir">
+            </div>
+            <div class="caja3">
+                <p class="letra">E</p>
+            </div>
+            <div class="caja2">
+                <p class="valor" id="frecuencia">-</p>
+                <span class="number">Hz</span>
+            </div>
+        </div>
+            <div>
+                <button class="start" id="iniciar">Start</button>
+                <button class="stop" id="detener">Stop</button>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
